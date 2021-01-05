@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'EduardoFont';
+	src: url('/Fonts/FMBolyarSansPro-100.ttf');
+}
+
+body {
+	background: #f1f1f1;
+	font-size: 16px;
+	font-family: 'EduardoFont';
+	width: 100%;
+	height: 100%;
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+img {
+	max-width: 100%;
+}
+
+#fecha {
+	font-size: 14px;
+}
+
+/* style the header */
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 1rem;
+	position: absolute;
+}
+
+header .icons {
+	display: flex;
+	width: 1rem;
+	cursor: pointer;
+	position: absolute;
+	left: 2.3rem;
+	top: 1rem;
+}
+
+header .icons > * {
+	margin: 0 0.3rem;
+}
+
+header .navbar {
+	position: absolute;
+	top: 1rem;
+	right: 3rem;
+}
+
+.navbar ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.navbar ul li {
+	margin: 0 1rem;
+	padding: 0.3rem;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.navbar ul li:hover {
+	border: 1px solid black;
+	border-radius: 1.4rem;
+}
+
+/* style the showcase */
+.showcase {
+	height: 100vh;
+	width: 100vw;
+	/* background: lightcoral; */
+}
+
+.showcase .showcase__photo {
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	height: 100%;
+}
+
+.showcase .showcase__photo img {
+	width: 100%;
+}
+
+.showcase .copyright {
+	position: absolute;
+	bottom: 1.5rem;
+	left: 45%;
+}
