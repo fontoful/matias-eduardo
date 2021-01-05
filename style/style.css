@@ -16,6 +16,7 @@ body {
 	width: 100%;
 	height: 100%;
 	color: black;
+	overflow-x: hidden;
 }
 
 ul {
@@ -39,29 +40,20 @@ img {
 header {
 	width: 100%;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	padding: 1rem;
 	position: absolute;
 }
 
 header .icons {
+	width: 1.5rem;
 	display: flex;
-	width: 1rem;
 	cursor: pointer;
-	position: absolute;
-	left: 2.3rem;
-	top: 1rem;
 }
 
 header .icons > * {
 	margin: 0 0.3rem;
-}
-
-header .navbar {
-	position: absolute;
-	top: 1rem;
-	right: 3rem;
 }
 
 .navbar ul {
@@ -102,5 +94,6 @@ header .navbar {
 .showcase .copyright {
 	position: absolute;
 	bottom: 1.5rem;
-	left: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
